@@ -39,5 +39,5 @@ console.table([account_id, account_email, account_password, account_city, accoun
 /*
 NOTE :-
 - Modern JS use 'let' and 'const' for declaring variables
-- Semicolon(;) is optional, but recommended to avoid unexpected errors
+- Semicolon (;) is optional, but recommended to avoid unexpected errors
 */
