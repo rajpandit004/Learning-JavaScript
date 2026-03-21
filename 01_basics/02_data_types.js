@@ -4,7 +4,7 @@
 - 'alert' works only in browser environment
 - In Node.js, it gives ReferenceError because 'alert' is not defined
 */
-alert(3 + 3);
+// alert(3 + 3);
 
 /*
 - Always avoid unnecessary line breaks in simple expressions
