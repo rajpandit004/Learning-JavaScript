@@ -1,22 +1,29 @@
 const account_id = 1024; // Constant variable
 let account_email = "abcd@email.com";
-account_city = "Siliguri"; // Allowed but not recommended
 
 /*
-- Prefer not to use var
-- Having issue in block scope and functional scope
+- Variable without 'let' or 'const' is allowed in non-strict mode
+- It creates an implicit global variable (bad practice)
+*/
+account_city = "Siliguri";
+
+/*
+- It's prefer not to use 'var'
+- 'var' is function-scoped (not block-scoped)
+- It allows redeclaration
+- It can cause unexpected behavior due to hoisting
 */
 var account_password = "12#34&56A";
 
 /*
-- Variable without any value
-- Value considered as 'undefined' here
+- It's a variable without any value
+- The value considered as 'undefined' here
 */
 let account_state;
 
 /*
-- Can't change Constants
-- Gives TypeError
+- We can't change Constants
+- It gives TypeError
 */
 // account_id = 1169
 
@@ -26,11 +33,11 @@ account_city = "Kolkata";
 
 console.log(account_id);
 
-// Display data in tabular format
+// It display data in tabular format
 console.table([account_id, account_email, account_password, account_city, account_state]);
 
 /*
 NOTE:-
-- Semicolon(;) is optional in JS
 - Modern JS use 'let' and 'const' for declaring variables
+- Semicolon(;) is optional, but recommended to avoid unexpected errors
 */
